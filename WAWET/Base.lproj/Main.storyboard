@@ -49,9 +49,6 @@
                                                     <state key="normal" title="Category Name">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="du1-PO-fIk" kind="show" id="hGK-6b-Ktw"/>
-                                                    </connections>
                                                 </button>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gxq-FH-Zcg">
                                                     <rect key="frame" x="0.0" y="265" width="315" height="115"/>
@@ -76,6 +73,9 @@
                                                                         <state key="normal" title="Button">
                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <segue destination="du1-PO-fIk" kind="show" id="oIJ-d1-p5h"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </view>

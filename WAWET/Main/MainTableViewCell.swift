@@ -17,8 +17,6 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     var item: categoryItem?{
         didSet{
             categoryButton.setTitle(item?.title, for: .normal)
-//            print(item?.subTitle)
-//            dump(item)
         }
     }
     
@@ -44,7 +42,9 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         return collectionCell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
-    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let cell = collectionView.cellForRow(at: indexPath) as! MainCollectionViewCell
+//        
+//        
+//    }
 }
