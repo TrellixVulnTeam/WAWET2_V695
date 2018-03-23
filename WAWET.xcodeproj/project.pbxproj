@@ -25,6 +25,8 @@
 		6F0752A920655A7400927476 /* baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F0752A620655A7300927476 /* baby.jpg */; };
 		6F0752AA20655A7400927476 /* diet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F0752A720655A7300927476 /* diet.jpg */; };
 		6FB626662065910C0083969C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB626652065910C0083969C /* Protocol.swift */; };
+		6FB6266820659E210083969C /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB6266720659E210083969C /* RecipeTableViewCell.swift */; };
+		6FB6266D2065A83C0083969C /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB6266C2065A83C0083969C /* item.swift */; };
 		EE9EECD1CBC2AFB560548DAA /* Pods_WAWET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD28203E72F2936E7DFC2C89 /* Pods_WAWET.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		6F0752A620655A7300927476 /* baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby.jpg; sourceTree = "<group>"; };
 		6F0752A720655A7300927476 /* diet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diet.jpg; sourceTree = "<group>"; };
 		6FB626652065910C0083969C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		6FB6266720659E210083969C /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		6FB6266C2065A83C0083969C /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		BD28203E72F2936E7DFC2C89 /* Pods_WAWET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WAWET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,7 +95,7 @@
 				6F0752782064F63D00927476 /* ViewController.swift */,
 				6F07529A2065121D00927476 /* Main */,
 				6F07528E2065090500927476 /* MenuViewController.swift */,
-				6F0752902065091D00927476 /* RecipeViewController.swift */,
+				6FB6266B20659E8B0083969C /* Recipe */,
 				6F07527A2064F63D00927476 /* Main.storyboard */,
 				6F07527D2064F63D00927476 /* Assets.xcassets */,
 				6F07527F2064F63D00927476 /* LaunchScreen.storyboard */,
@@ -102,6 +106,7 @@
 				6F0752A620655A7300927476 /* baby.jpg */,
 				6F0752A720655A7300927476 /* diet.jpg */,
 				6F0752A520655A7300927476 /* global.jpg */,
+				6FB6266C2065A83C0083969C /* item.swift */,
 			);
 			path = WAWET;
 			sourceTree = "<group>";
@@ -116,6 +121,15 @@
 				6F0752A320653C4800927476 /* Data.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6FB6266B20659E8B0083969C /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				6F0752902065091D00927476 /* RecipeViewController.swift */,
+				6FB6266720659E210083969C /* RecipeTableViewCell.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 		94991FC08D0E6A5027F6FD68 /* Frameworks */ = {
@@ -265,9 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F0752A0206528ED00927476 /* MainCollectionViewCell.swift in Sources */,
+				6FB6266820659E210083969C /* RecipeTableViewCell.swift in Sources */,
 				6F0752892065049E00927476 /* MainViewController.swift in Sources */,
 				6F07528F2065090500927476 /* MenuViewController.swift in Sources */,
 				6F0752912065091D00927476 /* RecipeViewController.swift in Sources */,
+				6FB6266D2065A83C0083969C /* item.swift in Sources */,
 				6F0752792064F63D00927476 /* ViewController.swift in Sources */,
 				6FB626662065910C0083969C /* Protocol.swift in Sources */,
 				6F07528D2065079C00927476 /* MainTableViewCell.swift in Sources */,

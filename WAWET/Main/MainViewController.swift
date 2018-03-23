@@ -8,29 +8,15 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController, CustomViewDelegete
-{    
-    func customViewListener(title: String, subTitle: String) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let nextVC = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-        nextVC.subTitle = [title, subTitle]
-        self.navigationController?.pushViewController(nextVC, animated: true)
-    }
-    
-    var index: Int = 0
-    let segueIdentifier = "segue"
-    
-    var selectTitle: String?
-    var selectItemSubTitle: String?
-    
+{
     var list: [categoryItem] = []
     @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
-        
         let custom = CustomClass()
         custom.delegate = self
-        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -41,10 +27,17 @@ class MainViewController: UIViewController, CustomViewDelegete
         list.append(categoryItem(title: "테마", subTitle: ["자취생", "요리초보", "글로벌"], img: "global.jpg"))
     }
  
+    func customViewListener(title: String, subTitle: String) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        nextVC.subTitle = [title, subTitle]
+        
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
     
     
 }
-
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
