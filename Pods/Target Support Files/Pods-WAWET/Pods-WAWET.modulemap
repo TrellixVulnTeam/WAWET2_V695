@@ -1,0 +1,6 @@
+framework module Pods_WAWET {
+  umbrella header "Pods-WAWET-umbrella.h"
+
+  export *
+  module * { export * }
+}
