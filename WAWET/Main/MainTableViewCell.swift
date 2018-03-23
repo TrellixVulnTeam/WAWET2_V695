@@ -14,9 +14,11 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     
     @IBOutlet var categoryImage: UIImageView!
     @IBOutlet var categoryButton: UIButton!
+    
     var item: categoryItem?{
         didSet{
             categoryButton.setTitle(item?.title, for: .normal)
+            categoryImage.image = UIImage(named: (item?.img)!)
         }
     }
     
@@ -26,13 +28,7 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionView.dataSource = self
     }
 
-    
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(section)
         return (item?.subTitle!.count)!
     }
     
@@ -41,10 +37,4 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionCell.collectionButton.setTitle(item?.subTitle[indexPath.row] , for: .normal)
         return collectionCell
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForRow(at: indexPath) as! MainCollectionViewCell
-//        
-//        
-//    }
 }

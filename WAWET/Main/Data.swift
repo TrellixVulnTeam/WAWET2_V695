@@ -10,10 +10,13 @@ import Foundation
 class categoryItem {
     var title:String!
     var subTitle:[String]!
+    var img: String
     
-    init(title:String, subTitle:[String]) {
+    
+    init(title:String, subTitle:[String], img:String) {
         self.title = title
         self.subTitle = subTitle
+        self.img = img
     }
     
 }

@@ -19,10 +19,10 @@ class MainViewController: UIViewController
         tableView.delegate = self
         tableView.dataSource = self
         
-        list.append(categoryItem(title: "제철메뉴", subTitle: ["봄", "여름", "가을", "겨울"]))
-        list.append(categoryItem(title: "다이어트, 건강", subTitle: ["저칼로리", "디톡스","피로회복"]))
-        list.append(categoryItem(title: "아이를 위한", subTitle: ["간식", "성장발달"]))
-        list.append(categoryItem(title: "테마", subTitle: ["자취생", "요리초보", "글로벌"]))
+        list.append(categoryItem(title: "제철메뉴", subTitle: ["봄", "여름", "가을", "겨울"], img: "season.jpg"))
+        list.append(categoryItem(title: "다이어트, 건강", subTitle: ["저칼로리", "디톡스","피로회복"], img: "diet.jpg"))
+        list.append(categoryItem(title: "아이를 위한", subTitle: ["간식", "성장발달"], img: "baby.jpg"))
+        list.append(categoryItem(title: "테마", subTitle: ["자취생", "요리초보", "글로벌"], img: "global.jpg"))
     }
 }
 
@@ -35,12 +35,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
         cell.item = list[indexPath.row]
-        dump(list[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 378
+        return 390
     }
 
 }
