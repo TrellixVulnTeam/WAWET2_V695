@@ -8,14 +8,30 @@
 
 import UIKit
 
-class MainViewController: UIViewController
-{
+class MainViewController: UIViewController, CustomViewDelegete
+{    
+    func customViewListener(title: String, subTitle: String) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        nextVC.subTitle = [title, subTitle]
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
     var index: Int = 0
+    let segueIdentifier = "segue"
+    
+    var selectTitle: String?
+    var selectItemSubTitle: String?
     
     var list: [categoryItem] = []
     @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
+        
+        let custom = CustomClass()
+        custom.delegate = self
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -24,16 +40,20 @@ class MainViewController: UIViewController
         list.append(categoryItem(title: "아이를 위한", subTitle: ["간식", "성장발달"], img: "baby.jpg"))
         list.append(categoryItem(title: "테마", subTitle: ["자취생", "요리초보", "글로벌"], img: "global.jpg"))
     }
+ 
+    
+    
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count // 4
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
+        cell.delegate = self
         cell.item = list[indexPath.row]
         return cell
     }
@@ -41,5 +61,5 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 390
     }
-
 }
+

@@ -10,6 +10,6 @@ import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var collectionButton: UIButton!
-    
+    @IBOutlet var collectionLabel: UILabel!
+
 }

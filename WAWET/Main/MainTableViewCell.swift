@@ -14,7 +14,7 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     
     @IBOutlet var categoryImage: UIImageView!
     @IBOutlet var categoryButton: UIButton!
-    
+    var delegate: CustomViewDelegete?
     var item: categoryItem?{
         didSet{
             categoryButton.setTitle(item?.title, for: .normal)
@@ -26,6 +26,7 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,7 +35,13 @@ class MainTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! MainCollectionViewCell
-        collectionCell.collectionButton.setTitle(item?.subTitle[indexPath.row] , for: .normal)
+        
+        collectionCell.collectionLabel.text = item?.subTitle[indexPath.row]
         return collectionCell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.customViewListener(title: (item?.title)!, subTitle: (item?.subTitle[indexPath.row])!)
+    }
 }
+

@@ -11,21 +11,30 @@ import Alamofire
 
 class MenuViewController: UIViewController {
     
-    @IBOutlet private weak var categoryNameLabel: UILabel!
-    @IBOutlet private weak var subCategoryNameLabel: UILabel!
+    var subTitle: [String] = []
+    
+    @IBOutlet var categoryNameLabel: UILabel!
+    @IBOutlet var subCategoryNameLabel: UILabel!
     @IBOutlet private weak var menuLabel: UILabel!
     @IBOutlet private weak var menuImageView: UIImageView!
     var itme:Menu? = nil
     var itmelist:[Menu]? = nil
-    let url = "http://192.168.0.16:3000"
+    
+    var url = "http://192.168.0.16:3000/category?p="
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        categoryNameLabel.text = subTitle[0]
+        subCategoryNameLabel.text = subTitle[1]
+        
+        
+        let temp = "여름"
+        url+=temp
+        
+        self.url = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         alamofireMenu()
-        
-        
     }
-    
     
     func alamofireMenu() {
         let alamofire = Alamofire.request(self.url, method: .get, encoding: URLEncoding.httpBody)
@@ -47,14 +56,13 @@ class MenuViewController: UIViewController {
                 }
                     return
             case .failure(let error):
-                print("ssssss")
                 print(error)
             }
         }
     }
     
     
-    @IBAction func sss(){
+    @IBAction func refresh(){
         let temp = randomPick(datalist: itmelist!)
         self.menuLabel.text = temp.title
         Alamofire.request((temp.image)!).responseData { (response) in
@@ -86,9 +94,6 @@ class MenuViewController: UIViewController {
         
         let url: String?
         let title: String?
-        var image: String?//ens image
-        
-        
-
+        var image: String? //ens image
     }
 }
