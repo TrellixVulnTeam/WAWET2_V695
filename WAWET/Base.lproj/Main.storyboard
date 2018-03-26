@@ -255,7 +255,6 @@
                                     <constraint firstAttribute="trailing" secondItem="a9d-wK-Vvz" secondAttribute="trailing" id="4j8-MO-7gb"/>
                                     <constraint firstItem="a9d-wK-Vvz" firstAttribute="leading" secondItem="JvP-g4-QjF" secondAttribute="leading" id="O9z-bo-S5a"/>
                                     <constraint firstAttribute="bottom" secondItem="a9d-wK-Vvz" secondAttribute="bottom" id="VXN-e2-t2E"/>
-                                    <constraint firstItem="a9d-wK-Vvz" firstAttribute="top" secondItem="JvP-g4-QjF" secondAttribute="top" id="wxM-AV-BFx"/>
                                 </constraints>
                             </stackView>
                         </subviews>

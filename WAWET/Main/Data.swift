@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 class categoryItem {
     var title:String!
     var subTitle:[String]!
@@ -21,7 +19,6 @@ class categoryItem {
         self.subTitle = subTitle
         self.img = img
     }
-    
 }
 
 
