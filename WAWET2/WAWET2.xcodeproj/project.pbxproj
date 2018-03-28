@@ -12,6 +12,10 @@
 		6F853498206B48B10024CA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F853496206B48B10024CA5A /* Main.storyboard */; };
 		6F85349A206B48B10024CA5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F853499206B48B10024CA5A /* Assets.xcassets */; };
 		6F85349D206B48B10024CA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F85349B206B48B10024CA5A /* LaunchScreen.storyboard */; };
+		6F8534A5206B59AC0024CA5A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8534A4206B59AC0024CA5A /* CategoryCollectionViewCell.swift */; };
+		6F8534A7206B5BBF0024CA5A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8534A6206B5BBF0024CA5A /* MenuViewController.swift */; };
+		6F8534A9206B5C500024CA5A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8534A8206B5C500024CA5A /* MenuCollectionViewCell.swift */; };
+		6F8534AB206B68530024CA5A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8534AA206B68530024CA5A /* Category.swift */; };
 		D9E2F30AD8BA0D9E9B670A5A /* Pods_WAWET2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0D52461B2B7214C5781E50 /* Pods_WAWET2.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +28,11 @@
 		6F853497206B48B10024CA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F853499206B48B10024CA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F85349C206B48B10024CA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6F85349E206B48B10024CA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F85349E206B48B10024CA5A /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		6F8534A4206B59AC0024CA5A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F8534A6206B5BBF0024CA5A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6F8534A8206B5C500024CA5A /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F8534AA206B68530024CA5A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		97B141FA9BD4749D969D3B54 /* Pods-WAWET2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WAWET2.release.xcconfig"; path = "Pods/Target Support Files/Pods-WAWET2/Pods-WAWET2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				6F853492206B48B10024CA5A /* AppDelegate.swift */,
+				6F8534AA206B68530024CA5A /* Category.swift */,
 				6F853494206B48B10024CA5A /* ViewController.swift */,
+				6F8534A4206B59AC0024CA5A /* CategoryCollectionViewCell.swift */,
+				6F8534A6206B5BBF0024CA5A /* MenuViewController.swift */,
+				6F8534A8206B5C500024CA5A /* MenuCollectionViewCell.swift */,
 				6F853496206B48B10024CA5A /* Main.storyboard */,
 				6F853499206B48B10024CA5A /* Assets.xcassets */,
 				6F85349B206B48B10024CA5A /* LaunchScreen.storyboard */,
-				6F85349E206B48B10024CA5A /* Info.plist */,
+				6F85349E206B48B10024CA5A /* info.plist */,
 			);
 			path = WAWET2;
 			sourceTree = "<group>";
@@ -212,7 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F853495206B48B10024CA5A /* ViewController.swift in Sources */,
+				6F8534AB206B68530024CA5A /* Category.swift in Sources */,
+				6F8534A5206B59AC0024CA5A /* CategoryCollectionViewCell.swift in Sources */,
 				6F853493206B48B10024CA5A /* AppDelegate.swift in Sources */,
+				6F8534A7206B5BBF0024CA5A /* MenuViewController.swift in Sources */,
+				6F8534A9206B5C500024CA5A /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXH5CKM9TX;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = WAWET2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.se.WAWET2;
@@ -367,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXH5CKM9TX;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = WAWET2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.se.WAWET2;
