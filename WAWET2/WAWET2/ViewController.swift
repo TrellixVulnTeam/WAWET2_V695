@@ -11,6 +11,8 @@ import Alamofire
 
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UIScrollViewDelegate {
     
+    // 브런치 테스트
+    // ㅁㄴㅇㄹㅁㅇ
     
     @IBOutlet private weak var categoryCollection: UICollectionView!
     @IBOutlet private weak var menuListScroll: UIScrollView!
