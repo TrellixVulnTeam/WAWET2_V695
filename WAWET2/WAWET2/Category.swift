@@ -12,8 +12,20 @@ struct Category: Codable {
     let href: String
     let title: String
     
-    init(href:String , title:String) {
-        self.href = href
-        self.title = title
-    }
+//    init(href:String , title:String) {
+//        self.href = href
+//        self.title = title
+//    }
+}
+
+struct Menu: Codable {
+    let href: String
+    let title: String
+    let writer: String
+    let img: String
+}
+
+struct Recipe: Decodable {    
+    let text: String?
+    var image: String?
 }
