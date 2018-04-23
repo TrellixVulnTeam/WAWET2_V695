@@ -1,4 +1,4 @@
-# 오늘모먹조? (What Are We Eat Today?)
+# 오늘모먹조? (What Are We Eat Today?) - 해커톤 프로젝트
 
 ## 1. 팀 소개 및 초기 기획
 ### -. 팀 구성
