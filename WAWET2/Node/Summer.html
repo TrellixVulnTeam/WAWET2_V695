@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<!--[if (IE 6)|(IE 7)|(IE 8)|(IE 9)]>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" class="old_ie">
+<![endif]-->
+<![if !IE]>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" class="">
+<![endif]>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<meta property="fb:pages" content="1567451316868458" />
+<meta name="description" content="5만건 이상의 레시피, 편리한 검색, 추천 레시피, 인기쿡방 레시피, 매주 이벤트">
+<meta name="keywords" content="">
+<meta name="google-site-verification" content="3eLg1zfxeZ_oO6oOOsvIxbtcW-FtDsViPVm7-CYOl8w" />
+<title>만개의 레시피</title>
+<meta property="kakao:title" content="만개의 레시피" />
+<meta property="kakao:description" content="" />
+<link rel="stylesheet" type="text/css" href="http://recipe.ezmember.co.kr/static/css/bootstrap_20161214.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/font.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="http://recipe.ezmember.co.kr/static/css/ez_recipe_20171221.css" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://recipe.ezmember.co.kr/img/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="http://recipe.ezmember.co.kr/img/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="http://recipe.ezmember.co.kr/img/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="http://recipe.ezmember.co.kr/img/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="http://recipe.ezmember.co.kr/img/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="http://recipe.ezmember.co.kr/img/icons/icon-hires.png" rel="icon" sizes="192x192" />
+<link href="http://recipe.ezmember.co.kr/img/icons/icon-normal.png" rel="icon" sizes="128x128" />
+<script type="text/javascript" src="http://recipe.ezmember.co.kr/static/js/jquery-1.11.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<script type="text/javascript">
+// Common Javascript
+var _WWW_URL_ = 'http://www.10000recipe.com';
+var _IMG_URL_ = 'http://recipe.ezmember.co.kr';
+var _FILE_URL_ = 'http://recipe.ezmember.co.kr/cache';
+var _CURRENT_PAGE_ = 'http://www.10000recipe.com/recipe/list.html?q=%EC%97%AC%EB%A6%84';
+var _USER_ID_ = '';
+</script>
+</head>
+<body>
+<script type="text/javascript" src="http://recipe.ezmember.co.kr/static/js/jquery-ui-1.11.4.js" charset="utf-8"></script><link rel="stylesheet" type="text/css" href="http://recipe.ezmember.co.kr/static/css/jquery-ui-1.11.4_201507011.css" /><script>
+$(document).ready(function() {
+    doRTKeyword();
+
+    $("#srhRecipeText").keypress(function(event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            $("#frmTopRecipeSearch").submit();
+        }
+    }).autocomplete({
+        delay: 200,
+        source: "/recipe/ajax.html?q_mode=autoComplete",
+        focus: function(event, ui) {
+            return false;
+        },
+        select: function(event, ui) {
+            this.value = ui.item.label;
+            return false;
+        }        
+    }).focus();
+    
+});
+
+
+
+var curRtword = 2;
+function doRTKeyword()
+{
+    var backRtword = (curRtword == 1) ? 2 : 1;
+    $("#RtwordDiv_"+curRtword).hide();
+    $("#RtwordDiv_"+backRtword).show();
+    curRtword = backRtword;
+}
+</script>
+
+<a href="#" id="btnGogoTop" class="rmenu_top" style="display:none"><span class="glyphicon glyphicon-menu-up"></span></a>
+
+    <div class="gnb">
+        <div class="gnb_top_wrap">
+            <div class="gnb_top">
+                <h1><a href="/index.html"><img src="http://recipe.ezmember.co.kr/img/logo4.png" alt="로고" ></a></h1>
+                <div class="gnb_search">
+                    <form id="frmTopRecipeSearch" method="get" action="/recipe/list.html">
+                    <div class="input-group">
+                        <input id="srhRecipeText" name="q" type="text" class="form-control" placeholder="" value="여름" style="ime-mode:active;">
+                        <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onClick="$('#frmTopRecipeSearch').submit();"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                    </form>
+                    <div class="gnb_search_word">
+<ul id="RtwordDiv_1" style="display:none;"><li><a href="/recipe/list.html?q=월남쌈">월남쌈</a></li><li><a href="/recipe/list.html?q=닭볶음탕">닭볶음탕</a></li><li><a href="/recipe/list.html?q=떡볶이">떡볶이</a></li><li><a href="/recipe/list.html?q=김치찌개">김치찌개</a></li><li><a href="/recipe/list.html?q=두부조림">두부조림</a></li></ul><ul id="RtwordDiv_2" style="display:none;"><li><a href="/recipe/list.html?q=된장찌개">된장찌개</a></li><li><a href="/recipe/list.html?q=오이무침">오이무침</a></li><li><a href="/recipe/list.html?q=잡채">잡채</a></li><li><a href="/recipe/list.html?q=밑반찬">밑반찬</a></li><li><a href="/recipe/list.html?q=두부">두부</a></li></ul>                        <div class="gnb_search_btn">
+                            <a href="javascript:void(0);" onClick="doRTKeyword()"><img src="http://recipe.ezmember.co.kr/img/btn_arrow2_l.gif" alt="이전"></a>
+                            <a href="javascript:void(0);" onClick="doRTKeyword()"><img src="http://recipe.ezmember.co.kr/img/btn_arrow2_r.gif" alt="다음"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="gnb_right">
+                                        <li><a href="/user/login.html"><img src="http://recipe.ezmember.co.kr/img/ico_user.png" alt="로그인"></a></li>
+                                        <li>
+                        <a id="btnTopWrite" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="레시피등록" data-original-title="레시피등록"><img src="http://recipe.ezmember.co.kr/img/tmn_write.png"></a>
+                        <div class="write_layer document_common_layer" style="display:none;left:-230px;">
+                            <a href="/inbox/insert.html" class="w_layer2"><img src="http://recipe.ezmember.co.kr/img/btn_write1.gif"><span>직접 등록하기</span></a><a id="btnBlogForm" href="javascript:void(0)" class="w_layer3" data-toggle="modal" data-target="#divModalBlogForm"><img src="http://recipe.ezmember.co.kr/img/btn_write2.gif"><span>블로그 가져오기</span></a>
+                        </div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+
+        <div class="gnb_nav">
+            <ul class="gnb_nav_ea10">
+                <li><a href="/index.html">홈</a></li>
+                <li><a href="/recipe/list.html" class="active">레시피</a></li>
+                <li><a href="/talk/list.html">토크</a></li>
+                <li><a href="/bbs/list.html">요리정보</a></li>
+                <li><a id="liTopMenu_brand" href="/brand/home.html">브랜드</a></li>
+                <li><a href="/chef/chef_list.html">쉐프</a></li>
+                <li><a href="/ranking/home.html">랭킹</a></li>
+                <li><a href="/event/list.html">이벤트</a></li>
+                <li><a href="/profile/index.html">MY홈</a></li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+var fromOther = 'n';
+$(document).ready(function() {
+    $(".ellipsis_title").ellipsis({row: 1});
+    $(".ellipsis_title2").ellipsis({row: 2});
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > $(window).height()*1.5) {
+            $("#btnGogoTop").slideDown(300);
+        } else {
+            $("#btnGogoTop").slideUp(300);
+        }
+    });
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(function() {
+    $('#memLayerBtn').click(function (e) {
+        // Used to stop the event bubbling..
+        e.stopPropagation();
+        $(".document_common_layer:not('.mem_layer')").hide();
+        if ($('.mem_layer').is(':visible')) {
+            $('.mem_layer').hide();
+        } else {
+            $('.mem_layer').show();
+        }
+    });
+
+    $('#btnTopWrite').click(function (e) {
+        // Used to stop the event bubbling..
+        $(".document_common_layer:not('.write_layer')").hide();
+        e.stopPropagation();
+        if ($('html').is('.old_ie')) {
+            //$('#divBrowserGuideModal').modal({backdrop:'static'});
+            $('#divBrowserGuideModal').modal('show');
+        } else {
+            if ($('.write_layer').is(':visible')) {
+                $('.write_layer').hide();
+            } else {
+                $('.write_layer').show();
+            }
+        }
+    });
+    $(document).click(function () {
+        $('.document_common_layer').hide();
+    });
+
+    $("#btnBlogContentsList").click(function() {
+        $("#btnBlogContentsList").html('<span class="fa fa-spinner fa-spin" style="width:'+$("#btnBlogContentsList").width()+'px"></span>');
+        el = $(this);
+        var params = 'q_mode=get_blog_contents_list&q_portal='+$("[name=q_portal]:checked").val()+'&q_blogid='+$("#q_blogid").val();
+        $.get("/common/ajx_common.html?"+params, function(html) {
+            $("#btnBlogContentsList").html('조회');
+            $("#divBlogContentsList").html(html);
+        });
+    });
+    $('#divModalBlogForm').on('show.bs.modal',function() {
+        $.ajax({
+            type: "POST",
+            url: "/common/ajx_common.html",
+            data: "q_mode=get_blog_info",
+            dataType: "json",
+            success: function(json) {
+                if (json['portal']) {
+                    $("[id^=q_portal_]").filter('[value='+json['portal']+']').trigger('click');
+                }
+                if (json['blog_id']) {
+                    $("#q_blogid").val(json['blog_id']);
+                    $("#q_blog_select_type_id").trigger('click');
+                }
+            },
+            error: function () {
+
+            }
+        });
+    });
+});
+var _blogIsSubmit = false;
+function doChangePortal(portal) {
+    var header = '';
+    var tail = '';
+    if (portal == 'Naver') {
+        header = 'http://blog.naver.com/';
+        tail = '';
+    } else if (portal == 'Daum') {
+        header = 'http://blog.daum.net/';
+        tail = '';
+    } else if (portal == 'Tistory') {
+        header = 'http://';
+        tail = '.tistory.com';
+    }
+    $("#txtBlogHeader").text(header);
+    $("#txtBlogTail").text(tail);
+}
+
+function doBlogSelect() {
+     var select_type = $(':radio[name="q_blog_select_type"]:checked').val();
+     if (select_type == 'url') {
+        var q_link = $("#q_blogurl").val();
+        if ($.trim(q_link) == '') {
+            alert('URL을 입력해 주세요.');
+            $("#q_blogurl").focus();
+            return;
+        } else {
+            setBlogContents(q_link);
+        }
+     } else {
+        getBlogContentsList();
+     }
+}
+function getBlogContentsList(page,added_params) {
+    if (page == 0) return;
+    if (!page) {
+        page = 1;
+    }
+    if ($("#q_blogid").val() == '') {
+        alert("블로그 주소를 입력해 주세요.");
+        return;
+    }
+    //var blog_url = $("#txtBlogHeader").text() + $("#q_blogid").val() + $("#txtBlogTail");
+
+    if (_blogIsSubmit) {
+        alert("처리중 입니다. 잠시만 기다리세요.");
+        return;
+    }
+
+    if (page > parseInt($("#q_page").val(),10)) {
+        $("#btnBlogNext").html('<span class="fa fa-spinner fa-spin" style="width:'+$("#btnBlogNext").width()+'px"></span>');
+    } else if (page < parseInt($("#q_page").val(),10)) {
+        $("#btnBlogPrev").html('<span class="fa fa-spinner fa-spin" style="width:'+$("#btnBlogPrev").width()+'px"></span>');
+    }
+
+    $("#q_page").val(page);
+    _blogIsSubmit = true;
+    var params = 'q_mode=get_blog_contents_list&q_portal='+$("[name=q_portal]:checked").val()+'&q_blogid='+$("#q_blogid").val()+'&q_scal='+$("#q_scal").val()+'&q_page='+page;
+    if (added_params) {
+        if (added_params.substring(0,1) != '&') params += '&';
+        params += added_params;
+    }
+
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/common/ajx_common.html",
+        data: params,
+        success: function(html) {
+            $("#divBlogContentsList").html(html);
+            $("[id^=spanBlogContentsTitle_]").ellipsis();
+            $('#divModalBlogContentsList').modal('show');
+            _blogIsSubmit = false;
+            return html;
+        },
+        error: function () {
+            alert('예기치 못한 오류로 인해 실패했습니다.');
+            _blogIsSubmit = false;
+        }
+    });
+}
+function setBlogContents(q_link) {
+    if (typeof q_link == 'undefined' || q_link == '') {
+        q_link = $("#listBlog [id^=q_link_]:checked").val();
+
+        if (!q_link) {
+            alert('블로그 컨텐츠를 선택하세요.');
+            return;
+        }
+    }
+    $("#btnSetBlogContents").html('<span class="fa fa-spinner fa-spin" style="width:' + $("#btnSetBlogContents").width() + 'px"></span>');
+    if(fromOther == 'n') document.location.href = '/inbox/insert.html?ref_blog_url=' + encodeURIComponent(q_link);
+    else if(fromOther == 'review') document.location.href = '/event/ins_review.html?seq=&review_seq=&ref_blog_url=' + encodeURIComponent(q_link);
+}
+function doChangeBlogSelectType(select_type) {
+    if (select_type == 'url') {
+        $("#top_blog_select_id").hide();
+        $("#top_blog_select_url").show();
+    } else {
+        $("#top_blog_select_url").hide();
+        $("#top_blog_select_id").show();
+    }
+
+}
+</script>
+
+<div class="modal fade" id="divModalBlogForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:100001">
+  <div class="modal-dialog" style="width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">블로그 찾기</h4>
+      </div>
+      <div class="modal-body">
+        <dl class="blog_select">
+          <dt>1. 레시피가 있는 블로그를 선택해 주세요.</dt>
+          <dd>
+            <span class="blog_t1"><label class="radio-inline"><input type="radio" name="q_portal" value="Naver" id="q_portal_Naver" onclick="doChangePortal(this.value)" aria-label="" checked="checked">네이버</label></span>
+            <span class="blog_t2"><label class="radio-inline"><input type="radio" name="q_portal" value="Daum" id="q_portal_Daum" onclick="doChangePortal(this.value)" aria-label="">다음</label></span>
+            <span class="blog_t3"><label class="radio-inline"><input type="radio" name="q_portal" value="Tistory" id="q_portal_Tistory" onclick="doChangePortal(this.value)" aria-label="">티스토리</label></span>
+          </dd>
+        </dl>
+        <dl class="blog_select">
+          <dt>2. 글을 가져올 방식을 선택해 주세요.</dt>
+          <dd>
+            <div style="padding-bottom:7px"><span style="color:#666;"><label class="radio-inline"><input type="radio" name="q_blog_select_type" value="id" id="q_blog_select_type_id" onclick="doChangeBlogSelectType(this.value)" aria-label="">블로그 ID를 입력하여 글 선택하기</label></span></div>
+            <div><span style="color:#666"><label class="radio-inline"><input type="radio" name="q_blog_select_type" value="url" id="q_blog_select_type_url" onclick="doChangeBlogSelectType(this.value)" aria-label="">블로그 글 URL을 입력하여 내용 가져오기</label></span></div>
+          </dd>
+        </dl>
+        <dl id="top_blog_select_id" class="blog_select" style="display:none">
+          <dt>3. 블로그 ID를 입력해 주세요.</dt>
+          <dd><span id="txtBlogHeader">http://blog.naver.com/</span> <input type="text" name="q_blogid" id="q_blogid" value="" class="form-control" placeholder="" style="width:200px">
+              <span id="txtBlogTail"></span>
+          </dd>
+        </dl>
+        <dl id="top_blog_select_url" class="blog_select" style="display:none">
+          <dt>3. 블로그 글 URL을 입력해 주세요.</dt>
+          <dd>
+            <input type="text" name="q_blogurl" id="q_blogurl" value="" class="form-control" placeholder="" style="width:400px">
+            <div><span>(블로그 글 URL은 네이버/다음/티스토리 만 가능합니다)</span></div>
+          </dd>
+        </dl>
+            </div>
+      <div class="modal-footer">
+        <button type="button" id="btnBlogContentsList" onclick="doBlogSelect()" class="btn-lg btn-primary" rel="popover_blog">조회</button>
+        <button type="button" class="btn-lg btn-default" data-dismiss="modal">취소</button>
+        <input type="hidden" name="q_page" id="q_page" value="1">
+        <input type="hidden" name="q_scal" id="q_scal" value="10">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="divModalBlogContentsList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:100002">
+  <div class="modal-dialog" style="width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">글을 선택하세요</h4>
+      </div>
+      <div class="modal-body" id="divBlogContentsList">
+
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="divBrowserGuideModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:100001">
+  <div class="modal-dialog" style="width:820px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">브라우저 업데이트 안내</h4>
+      </div>
+      <div class="modal-body">
+        <!--
+            <h3>Internet Explorer 10 이하 버전을 사용중이시군요!</h3>
+            <p></p>
+            <h4 style="color:#de4830">레시피 등록은,</h4>
+            <h4 style="color:#de4830">IE 11이상 또는 크롬(Chrome) 브라우저 사용이 필수입니다.</h4>
+        -->
+            <div style="width:800px; height:560px; background:#fff; text-align:center;">
+              <div sthyle="padding-top:5px;"><img src="http://recipe.ezmember.co.kr/img/update_icon.gif" /></div>
+              <div style="font-size:30px; font-weight:bold; color:#444; padding-top:25px;">브라우저를 최신버전으로 업그레이드 해주세요!</div>
+              <div style="font-size:18px; color:#777; padding-top:25px;">레시피 등록을 위해서는 지금 사용하고 있는<br />브라우저 버전을 업그레이드 하거나 다른 웹 브라우저를 사용해야 됩니다.</div>
+              <div style="font-size:18px; color:#777; padding-top:25px;">아래의 브라우저 사진을 클릭하여 업그레이드 하세요.</div>
+              <div style="padding-top:30px;">
+                <a href="https://www.google.com/chrome/" target="_blank" style="margin:0 4px;"><img src="http://recipe.ezmember.co.kr/img/update_b_03.gif" alt="chrome" style="border:none;"></a>
+                <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank" style="margin:0 4px;"><img src="http://recipe.ezmember.co.kr/img/update_b_02.gif" alt="IE" style="border:none;"></a>
+              </div>
+            </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <div class="app_install">
+        <p><img src="http://recipe.ezmember.co.kr/img/install_logo.gif" alt="만개의레시피" style="vertical-align:middle;"></p>
+        <p>요리 초보자라면 지금 바로 설치하세요.</p>
+        <div class="app_install_r">
+            <a href="https://market.android.com/details?id=com.ezhld.recipe" target="_blank"><img src="http://recipe.ezmember.co.kr/img/install_btn1.gif" alt="안드로이드설치"></a>
+            <a href="https://itunes.apple.com/kr/app/yoribaeggwa-mangaeyi-resipi/id494190282?mt=8" target="_blank"><img src="http://recipe.ezmember.co.kr/img/install_btn2.gif" alt="아이폰설치"></a>
+        </div>
+    </div>
+
+ <script>
+var _IS_SEARCH_RESTRICT = false;
+function goSearchRecipe(ca, val)
+{
+	if (val == 'reco' && _IS_SEARCH_RESTRICT) {
+		viewPremiumSearchModal();
+	} else {
+		$("#srRecipeFrm [name='"+ca+"']").val(val);
+        $("#srRecipeFrm").submit();
+	}
+}
+
+function doSetSearch(filters, val)
+{
+    if(!filters || !val) return ;
+    $("[id^=li_"+filters+"_]").removeClass("active");
+    // cancel
+    if($("#dsf_"+filters).val() == val)
+    {
+        $("#dsf_"+filters).val('');
+    }
+    else
+    {
+        $("#li_"+filters+"_"+val).addClass("active");
+        $("#dsf_"+filters).val(val);
+    }
+}
+
+function doDetailSearch()
+{
+    $("[name=dsearch]").val("y");
+    if($("#ni_resource").val()) $("[name=niresource]").val($("#ni_resource").val());
+    $("#srRecipeFrm").submit();
+}
+</script>
+<div class="container sub_bg">
+  <div class="rcp_cate st2">
+    <div class="cate_list">
+      <span>종류별</span>
+<a href="javascript:goSearchRecipe('cat4','')" class="active">전체</a><a href="javascript:goSearchRecipe('cat4','63')">밑반찬</a><a href="javascript:goSearchRecipe('cat4','56')">메인반찬</a><a href="javascript:goSearchRecipe('cat4','54')">국/탕</a><a href="javascript:goSearchRecipe('cat4','55')">찌개</a><a href="javascript:goSearchRecipe('cat4','60')">디저트</a><a href="javascript:goSearchRecipe('cat4','53')">면/만두</a><a href="javascript:goSearchRecipe('cat4','52')">밥/죽/떡</a><a href="javascript:goSearchRecipe('cat4','61')">퓨전</a><a href="javascript:goSearchRecipe('cat4','57')">김치/젓갈/장류</a><a href="javascript:goSearchRecipe('cat4','58')">양념/소스/잼</a><a href="javascript:goSearchRecipe('cat4','65')">양식</a><a href="javascript:goSearchRecipe('cat4','64')">샐러드</a><a href="javascript:goSearchRecipe('cat4','68')">스프</a><a href="javascript:goSearchRecipe('cat4','66')">빵</a><a href="javascript:goSearchRecipe('cat4','69')">과자</a><a href="javascript:goSearchRecipe('cat4','59')">차/음료/술</a><a href="javascript:goSearchRecipe('cat4','62')">기타</a>    </div>
+    <div class="cate_list">
+      <span>상황별</span>
+<a href="javascript:goSearchRecipe('cat2','')" class="active">전체</a><a href="javascript:goSearchRecipe('cat2','12')">일상</a><a href="javascript:goSearchRecipe('cat2','18')">초스피드</a><a href="javascript:goSearchRecipe('cat2','13')">손님접대</a><a href="javascript:goSearchRecipe('cat2','19')">술안주</a><a href="javascript:goSearchRecipe('cat2','21')">다이어트</a><a href="javascript:goSearchRecipe('cat2','15')">도시락</a><a href="javascript:goSearchRecipe('cat2','43')">영양식</a><a href="javascript:goSearchRecipe('cat2','17')">간식</a><a href="javascript:goSearchRecipe('cat2','45')">야식</a><a href="javascript:goSearchRecipe('cat2','20')">푸드스타일링</a><a href="javascript:goSearchRecipe('cat2','46')">해장</a><a href="javascript:goSearchRecipe('cat2','44')">명절</a><a href="javascript:goSearchRecipe('cat2','14')">이유식</a><a href="javascript:goSearchRecipe('cat2','22')">기타</a>    </div>
+    <div class="cate_list">
+      <span>재료별</span>
+<a href="javascript:goSearchRecipe('cat3','')" class="active">전체</a><a href="javascript:goSearchRecipe('cat3','70')">소고기</a><a href="javascript:goSearchRecipe('cat3','71')">돼지고기</a><a href="javascript:goSearchRecipe('cat3','72')">닭고기</a><a href="javascript:goSearchRecipe('cat3','23')">육류</a><a href="javascript:goSearchRecipe('cat3','28')">채소류</a><a href="javascript:goSearchRecipe('cat3','24')">해물류</a><a href="javascript:goSearchRecipe('cat3','50')">달걀/유제품</a><a href="javascript:goSearchRecipe('cat3','33')">가공식품류</a><a href="javascript:goSearchRecipe('cat3','47')">쌀</a><a href="javascript:goSearchRecipe('cat3','32')">밀가루</a><a href="javascript:goSearchRecipe('cat3','25')">건어물류</a><a href="javascript:goSearchRecipe('cat3','31')">버섯류</a><a href="javascript:goSearchRecipe('cat3','48')">과일류</a><a href="javascript:goSearchRecipe('cat3','27')">콩/견과류</a><a href="javascript:goSearchRecipe('cat3','26')">곡류</a><a href="javascript:goSearchRecipe('cat3','34')">기타</a>    </div>
+    <div class="cate_list">
+      <span>방법별</span>
+<a href="javascript:goSearchRecipe('cat1','')" class="active">전체</a><a href="javascript:goSearchRecipe('cat1','6')">볶음</a><a href="javascript:goSearchRecipe('cat1','1')">끓이기</a><a href="javascript:goSearchRecipe('cat1','7')">부침</a><a href="javascript:goSearchRecipe('cat1','36')">조림</a><a href="javascript:goSearchRecipe('cat1','41')">무침</a><a href="javascript:goSearchRecipe('cat1','42')">비빔</a><a href="javascript:goSearchRecipe('cat1','8')">찜</a><a href="javascript:goSearchRecipe('cat1','10')">절임</a><a href="javascript:goSearchRecipe('cat1','9')">튀김</a><a href="javascript:goSearchRecipe('cat1','38')">삶기</a><a href="javascript:goSearchRecipe('cat1','67')">굽기</a><a href="javascript:goSearchRecipe('cat1','39')">데치기</a><a href="javascript:goSearchRecipe('cat1','37')">회</a><a href="javascript:goSearchRecipe('cat1','11')">기타</a>    </div>
+        </div>
+<form id="srRecipeFrm" name="srRecipeFrm" method="get" action="/recipe/list.html">
+<input type="hidden" name="q" value="여름">
+<input type="hidden" name="cat1" value="">
+<input type="hidden" name="cat2" value="">
+<input type="hidden" name="cat3" value="">
+<input type="hidden" name="cat4" value="">
+<input type="hidden" name="order" value="date">
+<input type="hidden" name="dsearch">
+<input type="hidden" id="dsf_copyshot" name="copyshot">
+<input type="hidden" id="dsf_scrap" name="scrap">
+<input type="hidden" id="dsf_degree" name="degree">
+<input type="hidden" id="dsf_portion" name="portion">
+<input type="hidden" id="dsf_time" name="time">
+<input type="hidden" name="niresource">
+</form>
+
+    <div class="blank_bottom2"></div>
+        <div id="contents_area" class="col-xs-9">
+
+
+<script type="text/javascript" src="http://adimg3.search.naver.net/adpost/adpost_show_ads_min.js"></script>
+<script type="text/javascript">
+    function __nbp_ad_callback(data){
+        $.each(data.ads, function (idx, ad){
+            var mobile_icon = '';
+            $("#adpost_contents").append('<li>');
+            $("#adpost_contents").append('<p class="search_ad_li_tit"><a href="'+ad.cUrl+'" target="_blank">'+ad.title.replace('여름','<b>여름</b>')+'</a>'+mobile_icon+'<span class="search_ad_li_cont"> - '+ad.desc.replace('여름','<b>여름</b>')+'</span></p>');
+            $("#adpost_contents").append('<p class="search_ad_li_url"><a href="'+ad.cUrl+'" target="_blank">'+ad.vUrl+'</a></p>');
+            $("#adpost_contents").append('</li>');
+            $.ajax({
+                type: "POST",
+                url: "/recipe/ajax.html",
+                data: "q_mode=insertSite&title="+ad.title.replace('여름','')+"&url="+ad.vUrl+"&desc="+ad.desc,
+                success: function(result) {
+                }
+            });
+        });
+
+        if (data.ads.length >= 1)
+            $("#adpost_container").show();
+
+   }
+
+    $(function() {
+        NBP_ADPOST({
+            ch : "10000recipe.ch1", // 발급된 채널명
+            cnt : 3,
+            kwd1 : "여름",  // 검색어
+        });
+    });
+</script>
+<style>
+    #adpost_container p { margin : 0}
+    #adpost_container li {padding: 12px 0 2px;}
+    #adpost_contents ul,li {list-style:none;}
+    .search_ad_li_tit a {font-size: 14px; line-height: 1.4; color: #00c; text-decoration: underline;}
+    .search_ad_li_url a {color: #218d44; line-height: 1;}
+    .search_ad_li_cont {line-height: 1.5; margin-top: 4px;}
+</style>
+    <div class="view_step" id="adpost_container" style="display:none">
+        <div style="margin:0 35px; border-bottom:1px solid #DEDEDE; padding-bottom:5px;">
+        <img src="http://recipe.ezmember.co.kr/img/mobile/powerlink_ad.gif">
+        <div style="border-top:0px;height:17px; margin:-17px 0 0 0; text-align:right; font-weight:normal; font-size:12px;">
+        <a href="http://saedu.naver.com/adbiz/searchad/intro.nhn" target="_blank" style="padding-right:11px; background:url('http://img.ezday.co.kr/image/search/bg_r01.gif') no-repeat right 3px;color:gray;">등록 안내</a></div>
+        </div>
+        <ul id="adpost_contents"></ul>
+    </div>
+    <div class="blank_bottom"></div>
+
+
+    <div class="rcp_m_list2">
+    <div class="m_list_tit">
+    총 <b>3,373</b>개의 맛있는 레시피가 있습니다.
+    <ul class="nav nav-tabs2 pull-right" style="position:relative;">
+      <li role="presentation" class="active"><a href="javascript:void(0);" onClick="goSearchRecipe('order','date')">최신순</a></li>
+      <li role="presentation"><a href="javascript:void(0);" onClick="goSearchRecipe('order','reco')">추천순</a></li>
+    </ul>
+    </div>
+  <div class="row">
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6885993">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/03/23/93806f9e22f7b5424d0ba80b3eeb45771_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">【맛보장 완전 쉬운】얼갈이 물김치 담그기~</h4>
+            <p>by 조밍키♥</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6885545">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/03/15/863d2d046b06dd2da5de37dbee3f92b01_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">냉이달래무침 봄나물요리!</h4>
+            <p>by 팬이맘</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6885459">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/03/14/08ad089f8761a148e88c9fc1783bd0b31_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">냉이장아찌, 달래장아찌. 봄향기를 장아찌에 담기.</h4>
+            <p>by 콩설기</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6885363">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/03/13/441d3d70a89b60a9a75e79e05d7fcb9b1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">열무 얼갈이김치 시원하게 담아보자 군아~</h4>
+            <p>by 밥수이</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6884655">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/27/2f3e60459d22ea71e60158c59539cab61_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">정월대보름에 시래기 나물볶음 드세요 : )</h4>
+            <p>by 마튈다</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6884374">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/22/3de869941061255f1f20cfdde5be90501_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">생과일주스 만들기 상큼한데 부드럽게~*</h4>
+            <p>by 탁주부</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6884219">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/19/f068ccc6add3c5bde15c2d31c47fcf6f1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">꼬들꼬들한 오이지무침 밑반찬으로 간단하게</h4>
+            <p>by 바겨사</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6884076">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/16/25e497bb5b8c57d0b691e4cb72afe2641_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">명절에 느끼한 속 달래줄 빛깔고운 비트물김치. 비트나박김치</h4>
+            <p>by 세실이</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6884014">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/14/bfea49746c3159a58ab09c2a54d85d841_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">다이어트음식 두부샐러드</h4>
+            <p>by 눈누난나02</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883979">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/14/c6a28fdc148c55edb03a8142fdfe9d931_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">#도토리 묵사발#</h4>
+            <p>by Anna의밥상</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883598">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/02/07/571caf3131c32095c6175cc942f2aeef1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">간단하면서 쉬운 홈베이킹 레몬마들렌</h4>
+            <p>by 강제리</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883192">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/13/93b1078f20021c779a0166d2205114c31_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">밑반찬 쫄깃한 꽈리고추조림.</h4>
+            <p>by 어부동김반장</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883120">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/31/487861c84e3670718f374fe8b5003aeb1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">반찬없을때 간단하게 쌈채 겉절이 </h4>
+            <p>by 좋아좋아3</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883104">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/31/89477aef1fbeaf596577494f5bbc89f41_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">겨울에 즐기는 새콤한 열무비빔국수 ♥</h4>
+            <p>by 요리가좋아in독일</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6883054">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/29/e643a9baf8230730a76d8ddb2724fe441_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">코하쿠토 만들기 : 반짝 반짝 보석같은 일본식 젤리!</h4>
+            <p>by 빛날빈</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6882709">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/23/ec1a4e137c6fa4ca7412d5ebbf4c5ebe1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">【보양식】백종원 육개장 황금레시피,얼큰하고 진하게~</h4>
+            <p>by 스와티라마</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6882495">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/18/b186bca426cba1babcdc3f947db987d21_m.png" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">바로 지금이야! 추울 때 먹으면 더욱 맛있는 음식 BEST5 !!</h4>
+            <p>by 만개의매거진</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+      <div class="col-xs-4">
+        <a class="thumbnail" href="/recipe/6882339">
+			            <span class="thumbnail_over"><img src="http://recipe.ezmember.co.kr/img/thumb_over.png"></span>
+            <img src="http://recipe.ezmember.co.kr/cache/recipe/2018/01/15/98d135a7f917b667d243a043530f51dd1_m.jpg" style="width:275px; height:275px;">
+          <div class="caption">
+            <h4 class="ellipsis_title2">실패 없는 낙지볶음 레시피, 매콤한 이 맛!</h4>
+            <p>by 베리츄</p>
+          </div>
+        </a>
+                <div style="position:absolute;top:365px;width:100%;text-align:right;right:20px;"><span style="color:#74b243;font-size:10px;" class="glyphicon glyphicon-certificate"></span></div>
+              </div>
+    </div>
+<nav class="text-center"><ul class="pagination"><li class="active"><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=1">1</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=2">2</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=3">3</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=4">4</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=5">5</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=6">6</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=7">7</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=8">8</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=9">9</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=10">10</a></li><li><a href="/recipe/list.html?q=%EC%97%AC%EB%A6%84&order=date&page=11" aria-label="Next"><span aria-hidden="true">&gt;</span></a></li></ul></nav>  </div>
+</div>
+<div id="right_area" class="col-xs-3">
+<div class="list-group talk_smn">
+    <a href="/issue/list.html" class="list-group-item">TV</a>
+    <a href="/recipe/list.html" class="list-group-item active">분류</a>
+    <a href="/theme/list.html" class="list-group-item">테마</a>
+    <!--a href="/menu/index.html" class="list-group-item">식단</a-->
+</div>
+<div class="blank_bottom"></div>
+<script type="text/javascript">
+<!--
+$(document).ready(function()
+{
+    EZ.countLog('event_recipe_list_right','web','read','184');
+});
+//-->
+</script>
+<div style="margin:10px;">
+    <a href="/event/184?q_from=event_recipe_list_right" onClick="EZ.countLog('event_recipe_list_right','web','click','184');"><img src="http://recipe.ezmember.co.kr/cache/rpe/2018/03/07/b6e9c0c6418550f568f3ced41a0ea3691.jpg" style="width:100%;"></a>
+</div>
+<script type="text/javascript">
+<!--
+$(document).ready(function()
+{
+    EZ.countLog('event_recipe_list_right','web','read','182');
+});
+//-->
+</script>
+<div style="margin:10px;">
+    <a href="/event/182?q_from=event_recipe_list_right" onClick="EZ.countLog('event_recipe_list_right','web','click','182');"><img src="http://recipe.ezmember.co.kr/cache/rpe/2018/02/27/233bcc434308a75b6f8155faafa0c6a11.jpg" style="width:100%;"></a>
+</div>
+ 
+<div style="text-align:center;margin-top:10px">
+<script  src='http://compass.adop.cc/assets/js/adop/adopJ.js?v=14' ></script>
+<ins class='adsbyadop' _adop_zon = '24a228e5-9be7-4b59-a784-d64b272f9787' _adop_type = 're' style='display:inline-block;width:300px;height:250px;' _page_url=''></ins>
+</div></div>
+<div class="col-xs-12 sub_bg_btm"></div>
+</div>
+<div style="width:100%;"><script>
+function viewPremiumRankingModal() {
+	    $("#divPremiumRankingModal").modal('show');
+	}
+function viewPremiumBannerModal() {
+	    $("#divPremiumBannerModal").modal('show');
+	}
+function viewPremiumScrapModal() {
+	    $("#divPremiumScrapModal").modal('show');
+	}
+function viewPremiumFolderModal() {
+	    $("#divPremiumFolderModal").modal('show');
+	}
+function viewPremiumMenuModal() {
+	    $("#divPremiumMenuModal").modal('show');
+	}
+function viewPremiumSearchModal() {
+	    $("#divPremiumSearchModal").modal('show');
+	}
+function goPayInfo(tg_from) {
+	location.href = '/pay/payinfo.html?pay_tg_from='+tg_from;
+}
+function goPayForm(tg_from) {
+    location.href = '/pay/payreqform.html?pay_tg_from='+tg_from;
+}
+</script>
+
+<div id="divPremiumScrapModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_01.png">일반 회원은 스크랩 폴더 생성은 3개까지 가능하며,
+                <br>프리미엄 이용권 구매 시 50개까지 생성 가능합니다.
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('scrap_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('scrap_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="divPremiumFolderModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_02.png">일반 회원은 3개의 폴더만 생성 가능하며,
+                <br>프리미엄 이용권 구매 시 <b>50개까지 자유롭게
+                <br>생성이 가능</b>합니다.
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('scrap_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('scrap_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="divPremiumBannerModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_03.png"> 프리미엄 이용권을 구매하시면,
+                <br><b>일반 배너 광고를 제거</b>하실 수 있습니다.
+                <br><span>(※단, 브랜드쉐프의 상품 광고 제외)</span>
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('banner_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('banner_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="divPremiumRankingModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_04.png"> 프리미엄 이용권을 구매하시면,
+                <br><b>명예의전당</b>을 자유롭게
+                <br>이용하실 수 있습니다.
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('ranking_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('ranking_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="divPremiumMenuModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_03.png"> 프리미엄 이용권을 구매하시면,
+                <br>엄선된 레시피로 <b>만개의레시피 영양사가 제공하는 식단</b>을 이용하실 수 있습니다.
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('menu_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('menu_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="divPremiumSearchModal" class="modal in" role="dialog" aria-hidden="false" style="display: none; padding-right: 17px;">
+  <div class="modal-dialog" style="max-width:520px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기" width="18px" height="18px"></span></button>
+        <h4 class="modal-title">프리미엄 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <div class="premium_modal_cont">
+            <p class="premium_modal_emb">
+                <img src="http://recipe.ezmember.co.kr/img/mobile/premium_emb_03.png"> 프리미엄 이용권을 구매하시면,
+                <br><b>다년간에 걸쳐 축적된 데이타 기반의 <br>추천 알고리즘</b> 서비스를 <br>검색어 입력시에도 받으실 수 있습니다.
+            </p>
+            <p class="premium_select_b2">
+                <button class="btn btn-default st1" type="button" onClick="goPayInfo('search_recommend_web')">혜택 상세보기</button>
+                <button class="btn btn-default st2" type="button" onClick="goPayForm('search_recommend_web')">이용권 구매</button>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+</div><script>
+var curVRPage = 1;
+var totalVRcnt = 0;
+function getViewRecipeList(page)
+{
+    if($("#rRecipContDivPage_"+page).length > 0)
+    {
+        $("[id^='rRecipContDivPage_']").hide();
+        $("#rRecipContDivPage_"+page).show();
+        curVRPage = page;
+        return ;
+    }
+    var rvArr = storageUtil.get('stRecentViewRecipe');
+    if(!rvArr || rvArr == 'FAIL')
+    {
+        $("#recentRecipeDiv").hide();
+        return ;
+    }
+    totalVRcnt = rvArr.length;
+    var scale = 6;
+    var skip = (page-1) * scale;
+    var lastpage = Math.ceil(totalVRcnt/scale);
+    var hstr = '';
+    hstr += '<div id="rRecipContDivPage_'+page+'" class="row">';
+    if(page > 1) hstr += '<a href="javascript:void(0);" class="list_btn_pre" onClick="getViewRecipeList('+(page-1)+')"><img src="http://recipe.ezmember.co.kr/img/btn_arrow1_l.png" alt="이전"></a>';
+    if(page < lastpage) hstr += '<a href="javascript:void(0);" class="list_btn_next" onClick="getViewRecipeList('+(page+1)+')"><img src="http://recipe.ezmember.co.kr/img/btn_arrow1_r.png" alt="다음"></a>';
+    for(var i=skip; i<skip+scale; i++)
+    {
+        var rvs = rvArr[i];
+        if(!rvs) continue;
+        hstr += '<div class="col-xs-2">';
+        hstr += '<a class="thumbnail" href="/recipe/'+rvs.seq+'"><img src="'+rvs.thumb+'" style="width:180px; height:180px;">';
+        hstr += '<div class="caption elipsis_rrtitle"><b>'+rvs.title+'</b></div></a>';
+        hstr += '</div>';
+    }
+    hstr += '</div>';
+    if(page != 1 && curVRPage > page) $("#recentRecipeContDiv").prepend(hstr);
+    else  $("#recentRecipeContDiv").append(hstr);
+    getViewRecipeList(page);
+    $(".elipsis_rrtitle").ellipsis({row: 2});
+}
+
+$(document).ready(function () {
+    getViewRecipeList(1);
+})
+</script>
+<div id="recentRecipeDiv" class="container">
+  <div class="rcp_lately_list">
+    <h3>최근 본 레시피</h3>
+    <div id="recentRecipeContDiv"></div>
+  </div>
+</div>
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+    $('#appDownLayerBtn').click(function (e) {
+        // Used to stop the event bubbling..
+        e.stopPropagation();
+        if ($('.app_layer').is(':visible')) {
+            $('.app_layer').hide();
+        } else {
+            $('.app_layer').show();
+        }
+    });
+    $(document).click(function () {
+        $('.app_layer').hide();
+    });
+});
+
+function customerPropose()
+{
+    if(!$("#customerSend").val()) {
+        alert('의견을 입력해주세요.');
+        $("#customerSend").focus();
+        return false;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "/customer/insert.html",
+        data: {
+            q_mode : 'insert',
+            bid : '4',
+			board_txt : $("#customerSend").val()
+        },
+        dataType: "json",
+        success: function(result) {
+			if (result.result == 'SUCCESS') {
+	            alert('의견이 접수되었습니다. 감사합니다.');
+	            $("#customerSend").val('');
+			} else if (result.result == 'ERROR') {
+                alert(result.msg);
+            }
+        }
+    });
+}
+//-->
+</script>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 intro" style="width:700px;">
+        <p class="f_link">
+            <a href="http://www.ezhld.co.kr/2012_ezhld/company/company.html" target="_blank">회사소개</a><span>|</span>
+            <a href="http://www.10000recipe.com/ad/" target="_blank">광고문의</a><span>|</span>
+            <a href="/user/rules.html?f=privacy" target="_blank">개인정보처리방침</a><span>|</span>
+            <a href="/user/rules.html?f=contract" target="_blank">이용약관 </a><span>|</span>
+            <a href="/customer/list.html">고객센터</a>
+        </p>
+        <p class="f_info">대표 : 이인경 / E : help@10000recipe.com / F : 02) 323-5049 <br>서울 금천구 가산동 371-50 에이스하이엔드타워 3차 1106-1호  <br>문의 : 070-4896-6416 (운영시간-오전10:00~오후5:00)</p>
+		<p class="f_info">(주)이지에이치엘디 / 사업자등록번호 117-81-44101 / 통신판매업신고 <br>제 2009-서울금천-0631호 / 벤처기업확인 / <a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" style="color:#999">사업자정보확인</a> <br>서울지방중소기업청 제 031134233-1-01643호</p>
+        <p class="copyright">Copyright <b>©EZHLD</b> Inc. All Rights Reserved</p>
+      </div>
+      <div class="col-xs-2 banner" style="width:250px;">
+        <div class="app_layer" style="display:none;">
+            <p class="tit">모바일 만개의 레시피 다운받기</p>
+          <div class="layer_l"><img src="http://recipe.ezmember.co.kr/img/img_ezqr1.gif" alt="안드로이드"><a href="https://market.android.com/details?id=com.ezhld.recipe" target="_blank"><img src="http://recipe.ezmember.co.kr/img/btn_go.gif" alt="바로가기"></a></div>
+          <div class="layer_r"><img src="http://recipe.ezmember.co.kr/img/img_ezqr2.gif" alt="아이폰"><a href="https://itunes.apple.com/kr/app/yoribaeggwa-mangaeyi-resipi/id494190282?mt=8" target="_blank"><img src="http://recipe.ezmember.co.kr/img/btn_go.gif" alt="바로가기"></a></div>
+        </div>
+        <a href="javascript:void(0);" id="appDownLayerBtn"><img src="http://recipe.ezmember.co.kr/img/btm_app.gif" alt="app다운로드"></a>
+        <a href="https://story.kakao.com/ch/10000recipe" target="_blank"><img src="http://recipe.ezmember.co.kr/img/btm_kas.gif" alt="카카오스토리"></a>
+      </div>
+            <div class="col-xs-3 comment">
+        <textarea id="customerSend" name="board_txt" class="form-control" placeholder="만개의레시피에 전하고 싶은 의견을 남겨주세요. 회원님의 의견에 항상 귀 기울이겠습니다."></textarea>
+        <button class="btn btn-default" onclick="customerPropose();">의견제출</button>
+        <p class="noti">개별회신을 원하시면 <a href="/customer/list.html?bid=3" style="text-decoration:underline; color:#666;">여기</a>에 문의하세요.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer st2">
+    <div class="container">
+        <img src="http://recipe.ezmember.co.kr/img/logo6.png">
+        <ul class="btm_stats">
+            <li><a href="/brand/apply.html" style="color:#fff;"><span class="btm_stats_1"></span>제휴업체수</a><b>314</b></li>
+            <li><a href="/chef/apply.html" style="color:#fff;"><span class="btm_stats_2"></span>총 쉐프수</a><b>1,953</b></li>
+            <li><a href="/recipe/list.html" style="color:#fff;"><span class="btm_stats_3"></span>총 레시피수</a><b>93,401</b></li>
+            <li><span class="btm_stats_4"></span>월 방문자수<b>2,600,000</b></li>
+            <li><span class="btm_stats_5"></span>총 레시피 조회수<b>1,049,452,522</b></li>
+        </ul>
+        <div class="btm_mail">
+            <a href="mailto:marketing@10000recipe.com"><img src="http://recipe.ezmember.co.kr/img/btm_img2.png"></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://recipe.ezmember.co.kr/static/js/coreutil.min_20170112.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://recipe.ezmember.co.kr/static/js/ui.min_20150609.js" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62003031-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<img src="//kr-gmtdmp.mookie1.com/t/v2/learn?tagid=V2_255869&src.rand=[timestamp]" style="display:none;"/>
+<img src="//kr-gmtdmp.mookie1.com/t/v2/activity?tagid=V2_281041&src.rand=[timestamp]" style="display:none;"/>
+<iframe src="//static-tagr.gd1.mookie1.com/s1/sync-apac.html?cc=KR" style="display:none;"></iframe>
+
+</body>
+</html>

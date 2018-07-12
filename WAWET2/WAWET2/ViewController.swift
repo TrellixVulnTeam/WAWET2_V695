@@ -14,7 +14,9 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     @IBOutlet private weak var categoryCollection: UICollectionView!
     @IBOutlet private weak var menuListScroll: UIScrollView!
     
-    let url = "http://172.30.1.7:3000/"
+//    let url = "http://172.30.1.7:3000/"
+    let url = "http://172.30.1.166:3000/"
+  
     
     var scrollview: CGRect?
     var categoryList: [Category] = []

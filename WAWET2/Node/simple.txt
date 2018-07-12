@@ -1,0 +1,12 @@
+
+ \(ProfileImage)
+
+ \(Account)  
+ \(Password)
+ \(BackgroundImage)
+ \(StatusDescription)
+
+
+ \(LikeCount)
+
+

@@ -8,7 +8,9 @@
 
 import UIKit
 import Alamofire
-var node = "http://172.30.1.7:3000"
+
+//var node = "http://172.30.1.7:3000"
+var node = "http://172.30.1.166:3000"
 class MenuViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
     @IBOutlet var menuCollectionView: UICollectionView!
